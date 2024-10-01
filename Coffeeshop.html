@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Customer Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Logo -->
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIHEhUUExMTFhUXGBgXFhgWGBoVGBgfGRYYFhofGhodHSggHx0lHRofITIiJSktLy4uFyAzRDMsNyotLisBCgoKDg0OGxAQGyslICUrKy0tLS4tKy0wLTIvMi03Mi0rLSstLS01LS0vLTUtLysvLy0vNS8uLi0tLS0tLS8rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAMCAf/EAEoQAAEDAgMFBAYGBgcHBQAAAAEAAgMEEQUSIQYTMUFRImFxgQcUIzKRoUJSYoKSsRUWM3LBwiQ0Q2Oi0vBTg6Oys8PhVHPR4vH/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEAQX/xAAuEQACAQIFAgQFBQEAAAAAAAAAAQIDERIhMUFRIpETYaHwMkJxsdEjUoHh8cH/2gAMAwEAAhEDEQA/ANxREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEVXx/b2iwUlpk3sg+hFZ5B73XyjwJv3KiYl6VauqOWnijjvwveWQ+HAeVioOcUWRpSlsbGixANx/G9f6ZY94ph/Iv07A4tUavcB/7k5J+RK54j2RPwUtZI25FiI9H2Kw6sc2/2JyD/BfhosfwbUeuWH1XioH4bu/JPEfA8FbSRt6LF6H0n1+HOy1EbJLcQ9phk+Wn+FXfAvSRRYpZr3GB55S2DT4PHZ+Nl1VIsjKjOJcUX41wdqOfBfqmVBERAEREAREQBERAEREAREQBERAEREARFW9tNrYtmIrmz5X33cd+P2ndGj58PDjdjqTbsjv2i2hp9nY88z7X91o1e89Gj+PAdVkmL7V1+2km5p2vaw/2UR1I6yP00+DfFc+FYPU7ayvqamXJC39pM7QAD6EY4afAX5nQzrsZ3Q9UwuJzGHQvaLzSnhcniB3nUD6vBZqlXn+2a6dJLTN+iOGDY6jwIA4hPnf/AOnp9T4Odof+XxK7I9qvUwW0FJFA0C5cG7ySw5uP+a/iovF8L/QzmCSSOSQnNJE0kluoNnOHM635j5q54zFkjZuqinpKKWMGzW+0fmHaFhq7QjgRx5qjHN3tlbv3LWoq1879uxX6UYltAwy+sERg5S50oiZewOobbqOSiazDiydkO+jlLywZ43GRoL3ZbE9Rx81ZNh2+uUtVDumzFro5GsccrXE3HHl7gK5K6idSVdNJK2khbvYgWQuFmhsgcXPHLTnfkq3G8VImpWk4nPXbMtw4vBracPYDdly11wL2A6n+Ki6XHKqk9yomHdnJH4TcfJXHagPrN+5hwxzCCQ4EGosBfj9bRUKnp31bgxjS5ztGgC5KjUWGXSSpvFHqLGzbKSpaGVcMNSz7bAHeRAtfyXhJs1h20H9UldTTHhDOSWOPRrrk/M/uqzOxZ1XAHUwjdHDGG1NFIwAgNvmINrn/AMcL6KoYdgpxOOeclsUUQJuQS0uOoYOfA951bxurcck0vi98laUXd/D74PKkxXEvR/II5A7d8o3nNE8dY3DgfDrqFq2yu1tPtM32ZyyAduJ1sze8fWb3j5HRZzhe0xDNxVs9Ypzxa/V7O9jjrp46ciFH49s2/BMtbQyufT3u17T7SE9H93K58COt9Ksnp2K6lK/xZPnk3VFTdgdtm7RN3Utm1DRqBoJAPpM/i3l4cLktSaaujHKLi7MIiLpEIiIAiIgCIiAIiIAiIgCIiAitpsdj2dp3TSa20Y29i9x4NH/zyAJ5LHMDw2XbWplqap+WFnank4AAaiNnTT4DXiRfo2yxSTbTEGwQasa4xRdCfpyHu0Ov1Wd6kdpahlCxmHU1zHEbSEe9LJzvbjY8uun0QstWoln7ZtpU2st36I/a2ol2pe2mpI8lPEOwwdloA0zSH+H5m5X3S0VVsZIyocGviJyvMbs7SCdQdBY6XHK4C+tmac4hR1VNGQ2oc5rspOUva21269CDp9rvX2ykk2doallTZpnyiKG4cbg9p9gSAOH4R3LLZvrd7632XkW3S6Fppbd+Z+7XMiwuMNp4WbqpG83x7bj2s2Vt/cA0/wD0FQM+LuqqaKmLAd28uY7Uu7V+yB0uT8ui9sEwWbGxq/JBEDmkkPYjHvENubX52077L1q9r6bALsw6IPeNHVMwuT1yN00+A7jxXVGU3fRe9CV1Hp1fvU/cP2QraxtxHu2HiZXbsebfe+S9XbMU9NpLiVFG76oeHH4ZgfkqVimM1GLm880knc49keDR2R5BcAFlNUaa2uMU3vY0NuzdLNpHidE53IFzW/zlfUuyFdQWkiAktq18D7kW5jgfhdZ0urD8Rmwx2aGV8Z+w4tv4gaHzTwocW/kXnz6F2rdq6t7XxPEbXuGSR+7ySkdHHTl3DipZmPQP3NFDT76nIa1wcC2Rz3G5cDyIOt/HUAXUHRbcsxMCPEoWyt4CeMZZWd5A4+VvAror8JkwTJVUk28h4smZa7b6WePl05EDgoyU453uvUilF5NWe3BIbTwsiyYfRxmQtcZJDYOeXHle2lha5/dHIqOoJqvY+S8sThHJo+N9iyQcxfVua3+rLt2TnkfT1u4JNW7K4Hi8tzdst55tSdOZHcvXDWVDqGs9b3m6DQYt9fNvLm2XNrxsOmvio6tSWXHCtsNFhea35d9yu7V4IMIMddQucKd7gWlvvQPv7p6C+gv4dL6lsNtO3aaDNoJWWbK0cjycPsutceBHJZ1spizKRzoJ7OppxklB4NvoHd3efPkFwQvl9HeJWJLoxof7yJx4/vC1/wB5pHBaaNW6v3K6tO/S9djd0XxDK2doc0gtcAQRwIIuCPJfa1mEIiIAiIgCIiAIiIAiIgCq3pIxo4LRPLTaST2UfUFwOYjwaCfGytKxz0x17qqrip267tl7dXyHh+EN/EoTdollKOKSPHYaEYFRzV5A3jvYU1+v0nDzH/DPVdmxrXMirJohmqI2N3emZwzF2dwB4usP9XXztoBhwpqJp7NPE3N3vcLknv5/fKgcOxCXDHiSJ5Y4aXHMdCDoR3FefUqWqW4PQjDFBvkksIw417KmolMjd3G54eDlzSn3QTbUk9LcR1XzgGFOx2UmR5EUYzzSuN8rRra55mx8LE8l8YvtFVY2A2V9230Y0BoJ5aDifFdG29T+gKaPD4z23gS1ThzJ91l+mnwa3qVGEIyfkvU7KUl9X6ETtftT+lrQQDd0kejGDTPb6T+uuoB8TrwrLGmQgAEk8ABcnwC7MDw12MVEUDTYyODb9BxcfIAm3ctF9Wiw6KQxSepUUTnQvnaAauqewlrgx1rtbmBAt9U6AcNSV8ytyUMkZvV4bNRAGWN0d+AeMjj902d8lyK/QYc+t1osILg7XfVpL3P78r3NZ8Lr1fsZi03FlFGOjY6dn/LF/FdwnPEW/v7merrpMMmrReKN0luIZZ7vwDtfJWKq9H2InURxPPSOSMfLsqDrcInwhwNRBNGL6Otl1+y+xbdcs1qSUk9GcEkZiJa4FrhxDgQR4g6qa2U2mk2dedM8L9Jojq14OhIB0Drc+fA905huIiuYxlX/AEulc5sW8cLVNK5+jbuuXWJ53cDY63GU1jaTCjgNTLTudfIdDwzNIDmnxsRfvulrZi6l0st+OUAwwx1dG93q8vaie0kFh1uwnj149CDw1k8HopNqgx1XW9nMWsiBAe5zRc6WABtzsTY8lAejrEW1BfQTH2VQDuzxySAXBHS9vi0dSuKaOTDJS03bJG+1xxBaeI/MLPNKDvs9iSvLp3W5ZcVgpsTppTTwGF1I8Bwdq57XnKcx17Qc3gSbW71yYxH+smGCTjPRGzjzdEeZ8AL3/u3dV5YrtZUYpEYnCNrXEF5Y3KZCPrG/dytwXpsJViGqEb9Y52uheDwOYafPT7yRqLGrb5cHHCShd7Zlo9EGNevUroHG7oDYfuOuW/Agt8AFfViGwcjtnMW3DjoXSU7u/iWHzLW/iW3r0KbujDWjaV1uERFMqCIiAIiIAiIgCIiALEGj9N4/rqPWT8IBp/01t6xH0bn1jFi88t+/4kj+ZV1NUi+jkpPyPHaap9cq539ZHAeDTkHyaFGqe2QwkY/VZX3yAOkfyuARpfvLh5XV4xXZ+DE/WIY42M3Uce7LWhuWSz3EadW5LjoQvNjRlUTkbpVo02olH2GohW1keb3Y7yu+5qP8RCqGO4icXqJZz/aPLh3N4NHk0AeSuuyMm4p8QlHFlK7L95riPm0LPYozIQ1oLidAGgkk9ABqSraKtBeZyWc35E7sFJusRpT/AHlvxNc3+K2aGsosVn3TgwT0732ikADgT/aNbwdcHMHC5GfkSVmGz+wtbDJFUSbqnbG9kl5n5T2XB3AXtw52Vk9Ik8Eco9cpC+FwG5qoHZZG6e64nsk31Fzax0BsVqheKM1S05ZM5trY8fne6wcIrnKKVwGl9Lm4kJt5KhVuE1sp9rBVuP245XH4kK1U2O+qf1bGZWjlHVwvfbuzhrx8AF7ybf11KP61h8ngyYn5MaouzJxxLJJeqKRFgFTIezSVBPdC/wDyq04Hs9jfCMTRtPETPAjt9qN5Nx91fknpRxB3AwDvbGf5nFRGIbZ4hiFw+qkAPJlox/gAPxK4sK5JPG+DQMNw2j2SfeofE6onMTPV4RdgcJQ5paw6gZspubAFptxsOPamt/pNbJI+aOCAwMLKYtjkmfIwEF8nHKALW6AW53p/o/ov0hiMF9Q1xlcT9gF9z94D4q0bVYdiWMl4ijppYZ5ARNTlpc5rXOMQldfgwO4gcuJUr3WRW4pSzZBT4THVCGqo3TAvfI0NmIc9k0LDO3tD3g4N8QSPBS+3OWqfBVMFm1MLJPMAX+RavWh3eHlsbHh8OHRzTTyj3ZKiVjo2sae65A8LePJMd/g1A48WPli8g59vkwKqsk4MspvrXb7/ANFfuvSnnNM9rxxY5rh4tIcPyWi7NYLFQU9LK9jXGeRucuAdZr2P3bRfgM2TxJUD6QsBZg8rHRDLHKHHLya5tr27jcaeKyyoyjDEXRrRlLCRfpGIwzFGzt+kIKgfdNv+2tvacwusQ9Jw3jaB/N1K0Hysf5itjwWTfU8LvrRRn4sBXpU3mzDWXTE7URFaZwiIgCIiAIiIAiIgCxH0Zjc4q5p45Z2eYP8A9VtyxCgP6Gx+x0HrL2+U4cG/9QKupqi+jmpLyO7YDEW4VWe0Ia17XREnQA3BF/NtvNX41zcDpp5pD23SzO14udvHMjaPutaPAXWV7QU3qlVOzpI+3gXEj5ELhc8vtck24XN7eC86FZ00425Ns6KqNSvwWXY6ndWU+IQsF3vpiGDqQHgDzLgPNfmJyR+jqNsUIa+ukZmkmIzCJp0swHqQbeFzyC/PR7WijrWA8JA6M+di3/E0DzUT6R2uqagzEa6Qyj6kkdxqOTXsyvaeYJ6FX0H+nlsQqL9Wz0eZwUdE/H89TWVDmwsNnyyEyOc465Im83W5DQDVaPR4hNi+HsdQMc5sPsjDVMa4VDGtaAb6Au8Da+YHks7Y5lVT0ebWGCR7ahvDKZJs4c62uVzLNzf3ZHGy69n9rZsLlkqZCZHjJGIs2WNrCSXZWjQBuVrWgaAvvrzti7EJxb02PKurqCZxbPQTU0g97cSZbf7qRtm+AUVUNoj+zfVj9+OI/MSD8louKVU+Nx76lbT19PxdDPGDUQH6osQT8z+9xVDr6+ljJD8P3T+YE8sdvuvBsuSR2Dv/AL+SGLcxs25ubDTU+Qvqp+n2VfGzeVLxC0cW2DpPA5nNjYfsveHfZUtGYNlIhNuv6TIOwxzi7d3APvWBFmkZiLG7sgIs8qpV1dLijw57i93Bo4AX4NY0aNHcAuWS1JJuWhbtka+PCnzOpKeaQ5Mr55Zoo2RNJve7osjbkA2cTfLwKkxiH60SCnGJyRsIdmibEO3YXIjkYxmc2B0LdbaByrO2jv0cY6FhtHTtbvLf2kzmhz3u62uAOlivTY/DCXRTnS0rXNN7WDXi7vCwkd4Uz1JN6EHFWxE7Ty0e0kLsNo95BlO8hc8i1S5gJcJRa46jplBsMuVfFbTvoMIpIpGlr9/OXNPEZXytP5hRkrhR18tWxuVoDZImji6appmuZG3vzS5j0a3vCn/SVWGSWGIm7oowX2+s+xPyaD5qus+h9iUF1pLTUsWDVrMXwosafaRRZbcS10QvG63i1pHwUD6T8TbVyxxNIJiDi+2oDn5ez4gN+aprXmI6Eg9xIK/I4jMQ0cXENHiTYLNKu5Qw249C2NBRnivz6kr6TDkZh7ebaUE+Yb/lWxYHHuqaBvSKMfBgCx30mj13EWQN+hHDAB3uJcPk8LbmNyAAcALfBejTWbMVZ9MT6REVpnCIiAIiIAiIgCIiALF/S5Ruw6vZUM03jWvB+3EbflkW0KnelTBv0pROe0XfAd6O9oFnj8Ov3QoVFeJbRlhmVDbpramSGqZ7lTEx/wB4NAI+GX4Fe+B0tK6Fz4oX1VSxrHGOTRnaNnZGD3w08b9QuHZR/wCsGHS0nGamJmhHNzSTmaOupP4mqOwSIzStAnbBoTvC4tsALmxHE25XF159RYal7am6OcMN9Ds2qpxhtY7d9g3ZIGi3s3OAfbTTR38Fascp6XaOnjqzKKeV4ET5CM0RP+znB0y5vdcbWJFjqAeLEsGhfHKyOKQlkXrTat5zCbS5F+ABB0HG4vbmYTZnF2URfDOM1NMMsrenIOHeO7XQHiAuwl4c2nozjWOKa1RC4rs9W7NuLzGWst+0i9pEWniCdeyejxr3qAlkEpuA0fu8PIclbsUbXbByAQVD/V39qF4s+N4Oti03aHW42GvEd3M/a1ld/WqCklPN7A6nkPi5pN1e0jib11K9RVklA8Pie+N4+kwlp8NOI7ld9l9uK3EKiGCZ8UjHPAcZI2k5Rq6xFtbDjZQT6jCp+MFbD3Ryxyj/AIjQfmv2hmoKCWOWOWsBje14D4YnXym9jaUaHh5rqutxJKSzR+bRUlViFVINzM4tc5oDY3O+k55IsODnOc4Ho5deD4SNnHtqq4Bm77cNOSN7K8asu0XLGA6ku6DRdMssVm7wOlpTpBO127exvKKV+cAOYOzZ4dw00su2h2foY+20OJ4jPPGR/wBoH8a6lncg5WViu4VhE+0U29kacsj3Pc43bnJOZwYBdzvug2HEt4i01rRXtFNAQ1j2lr5AQGMiFhKWkaZQ1ti4HLoI2l15HmTkoDI112nJYZ7gCIgadsuOR4A/2k0oH1CoJ0sm0TzR0Wue3rM+pblGlsxAJbpbg0Otla1rb37ayI4sTvwSOyzoa2qnrX3fFTglhNxFEAMsbIwfekygEmwANrZiQ4V+Vz9oKhziWNdI5ziXuysYOV3cgAAPgpHaKvipYmUVKfYRG7385n83E8xfyvw0AXtg0lLRQPimkkZLPdj3Nbcwta4Wa8EXs46m3K3BZaslOWHZfcvgnFYra6fQ98cw+LEWNeKqkNQxh3oY/syhg0c029/KLEAa6cFH7DUXrtZGT7sd5XHoGaj/ABWUdi+GnDHhueOQEBzXxuDg5pvY93DgpaeT9XcLe86TVvs2DmIgO0fME/jaoQWKpmtNTsumFk9dDi2UvtPjO+tdu8fOe5rP2fzyBbgs59DWDGmgkqXDWU5WfuMJufN1/wAAWjL0aayuYazvKy2CIisKQiIgCIiAIiIAiIgC/HDMLHVfqIDCsYpZPR/iQfGDu7l8Y5Ojdo5h7xfL5NKkNrcOYMtVT609R2mkfQcdXNPTW+nKxHJaNtps23aanMegkb2onfVdbgfsngfjxAWU7K4z+hHy0Nc0ine4tka7jC/6w7uB07nDvyVqSaw9jdSqX6lqtfMnKCok2h3jp5jFSRNYZY4yTo1oaA1gubHLcm1h+XltRRwPdaKMRy3aI447yMqI3aRvYQPesLEHj3lctfRT7I1DXNIcw6xv4slYeLXcjccR5jkVIbESwQzNldlMz5RHHGLgRh2rn68rXa3/AFbMs3glrvcteXXHTaxHYNjwpWOpqmPfUztHRu95hvxZ0IOttNdQQePPimwhqGmbD5BUxc2XAmZ3EG1/ke48VKYls62KKeplqGA53BrI/aXe5xcGl1wL9QL248rKGfT1GCPaQXRvLBIMju0Gu+tbUd4KRnKGUlkdspO8Xn6FTnhdTuLXtc1w4tcC1w8QdV8LRBti+paG1UEFU0f7RgDvjYj5LyfPg9Rq+glYf7qV1vhnaPkrVUg9znWtV2KTQYjNhxJikcwnQ2Ojh0c06OHcQVLRbX1ujGPZc6ANghufACP8grA2TBodW0M7j9uV1vlIfyXs3a4UIIpKSnp7/Sa0Of8AGw+YKeLFfN9zmFv5e9jjp9mK3GQJcRnfBTjX2zu19yLg0+IB7iujEcdipYjS0LDFB9N5/aTciXHiAfy00GijZJp8dlYHyOe95DWF5s3U205AX6KV2ZwtkklTFNC6WSNhsxri112vDX5ertRa+nxVbqSnlHK+5LAo5y22Ic4ZLHA2oA9nmLczTcsIItmA92/L/wAi8pV4pHi8N6pjhOGndTsbpLl0yyDgbfWHDu4Htmh/VV7nRyxzwOO7mgc5ufUXLXtBIJF/eb8LKNa2faydscbQ1rRZjBpHCz/XE8SfIKu2HJa8Er4s3pyeey2DfpeXt9mGMZ5nnQBo1tfqbHwAJ5LmxKd+32INjiu2L3I9LbuJvvPI5E8bd7Wrp2vxqOljGHURLmA+3kbqZn3Ayi3EX6cbAcBrf/R1sn+rsOeQDfygF/PIOIYPDiep8AtdGlZYe5RVqfN2/JaKKlZQxsjjFmMaGtHQAWC90RbDAEREAREQBERAEREAREQBERAFTdv9im7RN3kWVtQ0WB4CQD6Lv4Hl4cLki40mrMlGTi7owrZ/aQ4QHUVfG59ODYtcPaQHq3nYcbDrcdD241s06lZv4HCemdq2RmpaPtgcLdfjbgtF2u2Og2mbd3YlAs2Vo1Hc4fSb3fAhZW+LEvR3KSNIyeIu+CTl2ujvg7yWWrRT17mynVvnHXg6aTFG1T6ZlRYU8OmVjdDxcSRfUuNgT0upjDqyTFBiFQ1rnTPY1jGN1c1j3ZXWA1OVoA06LhixTDNo/wBoDQzni4dqBx6ngB55fEr7l2TrKC0sBEreLZKd+tu6xB+F1nwTj5ry+lvQtxQfk/P6/wDT3bg0cZoKZ8YEsrjJN9F4Y49lp5jsg+BC9abYwVFY5mYim0e2QHVzXgljWk8XaG/c0lV6KtnwqobM8O3rST7YOuTYt1vYnQ/kujDdpJqJ0RJzthzljCbAGRrgTcam2Y26XUFKn8y39/kk41LdL2I2GATytYDYOeGgnkC7KCVbo6WkfWGg9V0uWb3M7e3Dc2fpbutaxv3KlDRWbDdr6rVpa2e7ch7JEtv32Wco05RWv5/glUjJ6fg+2NZi1OyIzwxz0r3NY+R27a+O9xZ3VpGg6DvXxjGPNhrZJoMrs0e7c6xDXksDXOA42uB8F8xbK1eKuMm4ZTsOva9kxo7mm7vkks2F7O6vk9emHBkekIPe7UH4u/dVqjN7W8/oVtwT58vqcmA7OS4t2tI4W6vmfo0AcbX4n5d4X5j21MdLGaPDg4Mccsk2u8mJ0s22tjwvzvYADjz1GIYht8/dRt9k0i0bOxDHbhndzI7/ACC0jYzYOHZ20j7S1H1yOyy/Jg5dMx1PcNFfSopfD3K6lXeXb8kV6Odg/wBF5aipaN9a8cZ1EXeft/l48NERFriklZGKc3J3YREXSIREQBERAEREAREQBERAEREAREQBfE0TZ2lrmhzSLEEAgjvBX2iAoWPei6lrrup3GBx5Dtx/hJuPIgdypsuxmLbOOLqfOR9ank4+LDYn4Fbeig6aZbGtJZPMw87eYphgyztDu6ogLfyyI30htk9/D6Jx6huX8wVt5aHcVyS4TTze9BC7xjafzCi6b5JqtH9pjZ9ILGe7h1E09SL/AMoQekLEa3s07ImdBBCXH4Eu/JbFHg9NF7tPCPCNg/guxjAzQAAd2iKm+Q60f2mI/q1jO059sJcp51D8jB/u+I8mq1YF6KIKazqqR0p+oy7I/M+8fiPBaMi6qa3IutJ5LI8KOkjoWBkbGsYODWgNA8gvdEVhSEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQH//Z" alt="Coffee Shop Logo" class="logo">
+
+        <h1>Coffee Shop Customer Feedback</h1>
+        
+        <form action="#" method="post">
+            <!-- Basic Information -->
+            <div class="form-group">
+                <label for="name">Customer Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="visit-date">Date of Visit:</label>
+                <input type="date" id="visit-date" name="visit-date">
+            </div>
+            
+            <!-- Satisfaction Rating -->
+            <div class="form-group">
+                <label>Overall Satisfaction:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="very-unsatisfied"> Very Unsatisfied</label>
+                </div>
+            </div>
+            
+            <!-- Product Feedback -->
+            <div class="form-group">
+                <label for="favorite-drink">Favorite Drink:</label>
+                <select id="favorite-drink" name="favorite-drink">
+                    <option value="coffee">Coffee</option>
+                    <option value="tea">Tea</option>
+                    <option value="smoothie">Smoothie</option>
+                    <option value="pastry">Pastry</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label><input type="checkbox" name="recommend" value="yes"> Would you recommend our coffee shop to a friend?</label>
+            </div>
+            
+            <!-- Open-Ended Questions -->
+            <div class="form-group">
+                <label for="best-part">What did you like the most about your visit?</label>
+                <textarea id="best-part" name="best-part" rows="4" placeholder="Let us know!"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="suggestions">Any suggestions for improvement?</label>
+                <textarea id="suggestions" name="suggestions" rows="4" placeholder="We'd love to hear your thoughts!"></textarea>
+            </div>
+        <!-- Audio (Optional Background Music) -->
+        <audio controls>
+            <source src="background-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Video (Introduction/Message from Owner) -->
+        <video controls class="intro-video">
+             <source src="https://youtu.be/Nu8kIIL-CDA?si=qPurV9hN0ePIC2r-" type="videomp4">
+             Your browser does not support the video element.
+        </video>
+        <!-- Submission -->
+        <div class="form-group">
+            <button type="submit">Submit Feedback</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
